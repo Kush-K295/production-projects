@@ -1,0 +1,17 @@
+# Python environment
+venv/
+env/
+__pycache__/
+*.pyc
+
+
+library_db/
+chroma.sqlite3
+
+
+data/*.json
+data/*.csv
+*.xls
+
+
+.env
