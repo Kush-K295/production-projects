@@ -3,13 +3,14 @@ from typing import List, Optional
 
 class inputpayload(BaseModel):
     query : str
-    num_results : int
+    nresults : int
 
 class outputpayload(BaseModel):
     title : str
     author : str =""
     edition : str= ""
     publisher : str=""
+    year : str=""
     accession_nos : List[str]
 
 class response(BaseModel):
