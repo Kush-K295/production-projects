@@ -1,9 +1,9 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List, Optional
 
 class inputpayload(BaseModel):
-    query : str
-    nresults : int
+    query: str = Field(..., min_length=1)
+    nresults : int = Field(5, ge=1, le=20)
 
 class outputpayload(BaseModel):
     title : str

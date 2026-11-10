@@ -17,10 +17,10 @@ class DBmanager:
             ids=ids,
             metadatas=metadatas
         )
-    def searchBooks(self, queryembedding: list, n_umresults: int):
+    def searchBooks(self, queryembedding: list, n_results: int):
         results = self.collection.query(
             query_embeddings=[queryembedding],
-            n_results=n_umresults
+            n_results=n_results
         )
         return results
 Manager = DBmanager()
