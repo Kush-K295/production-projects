@@ -6,7 +6,7 @@ from app.models.schemas import inputpayload, response
 model = SentenceTransformer('BAAI/bge-m3')
 
 app = FastAPI(title="KitabKosh")
-
+    
 @app.post("/search", response_model=response)
 def semanticSearch(userSearch: inputpayload):
 
