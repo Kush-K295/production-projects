@@ -8,7 +8,7 @@ A collection of deployment-ready software architectures, microservices, and full
 
 | Projects | Architecture | Tech Stack |
 | :--- | :--- | :--- |
-| **[KitabKosh](./kitabkosh)** | Multilingual semantic search engine and RAG pipeline for a 19,000-record academic library catalog. Features offline vector inference and idempotent database ingestion. | FastAPI, ChromaDB, Llama 3.2, sentence-transformers, Pydantic |
+| **[KitabKosh](./KitabKosh)** | Multilingual semantic search engine and RAG pipeline for a 19,000-record academic library catalog. Features offline vector inference, idempotent database ingestion, and an interactive discovery UI. | **Backend:** FastAPI, ChromaDB, Llama 3.2, sentence-transformers, Pydantic<br>**Frontend:** React, Vite, Tailwind CSS |
 
 
 ## Engineering Focus
